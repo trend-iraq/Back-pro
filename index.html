@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050914">
+  <meta name="description" content="BLACK PRO — أفلام ومسلسلات وقنوات رياضية وترفيه للأطفال في تطبيق واحد. اختر اشتراكك وتواصل معنا عبر واتساب.">
+  <title>BLACK PRO | كل الترفيه بمكان واحد</title>
+  <style>
+    :root{--bg:#050914;--panel:#0b1425;--blue:#00aaff;--cyan:#25d9ff;--gold:#ffd45c;--text:#f7fbff;--muted:#b8c4d7;--line:#1e3452}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 50% -15%,#123b75 0,transparent 45%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#050914eF;border-bottom:1px solid #183252;backdrop-filter:blur(14px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:1px}
+    .brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid var(--cyan)}
+    .brand span{font-size:20px}.brand b{color:var(--cyan)}
+    .navlinks{display:flex;gap:20px;color:var(--muted);font-size:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:13px;font-weight:800;border:1px solid transparent;transition:.2s;cursor:pointer}
+    .btn:hover{transform:translateY(-2px)}
+    .primary{background:linear-gradient(135deg,#00aaff,#1764ff);box-shadow:0 8px 28px #007aff55;color:white}
+    .whatsapp{background:#12bd68;color:#04130b;box-shadow:0 8px 28px #12bd6840}
+    .outline{border-color:#2875bd;background:#0b1b32}
+    .hero{padding:46px 0 34px;display:grid;grid-template-columns:1.02fr .98fr;gap:36px;align-items:center}
+    .eyebrow{display:inline-block;border:1px solid #1b75b7;background:#082342;color:#8eeaff;padding:5px 12px;border-radius:99px;font-size:13px}
+    h1{font-size:clamp(34px,5vw,58px);line-height:1.2;margin:16px 0}
+    h1 em{font-style:normal;color:var(--cyan);text-shadow:0 0 22px #00aaff55}
+    .lead{font-size:18px;color:var(--muted);max-width:600px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}
+    .fine{font-size:12px;color:#8ea1bb}
+    .hero-art{position:relative}
+    .hero-art img{display:block;width:100%;border-radius:22px;border:1px solid #1769aa;box-shadow:0 0 45px #007bff2e}
+    .glow{position:absolute;inset:15% -3% -3%;background:#007bff22;filter:blur(38px);z-index:-1}
+    section{padding:44px 0}
+    .section-head{text-align:center;margin:0 auto 26px;max-width:720px}
+    h2{font-size:clamp(25px,3.4vw,38px);margin:0 0 8px}
+    .section-head p{color:var(--muted);margin:0}
+    .features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .feature,.price-card,.step,.faq{background:linear-gradient(145deg,#0d1b31,#080f1d);border:1px solid var(--line);border-radius:18px;padding:20px}
+    .emoji{font-size:28px}
+    .feature h3{margin:8px 0 3px;font-size:18px}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+    .screens{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .screen{margin:0;background:#0b1425;border:1px solid var(--line);border-radius:15px;overflow:hidden}
+    .screen img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+    .screen figcaption{padding:10px 12px;font-weight:700}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}
+    .price-card{text-align:center;padding:26px 18px}
+    .price-card.best{border-color:#00baff;box-shadow:0 0 32px #007bff24;transform:translateY(-5px)}
+    .duration{color:var(--muted);font-weight:700}
+    .price{font-size:clamp(30px,4vw,43px);font-weight:900;color:var(--gold);line-height:1.35;margin:8px 0}
+    .currency{font-size:14px;color:var(--muted)}
+    .price-card .btn{width:100%;margin-top:14px}
+    .tag{display:inline-block;background:#073c5a;color:#8cecff;border-radius:99px;padding:3px 10px;font-size:12px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .step strong{display:block;color:var(--cyan);font-size:18px;margin-bottom:5px}
+    .step p{margin:0;color:var(--muted)}
+    .support{background:linear-gradient(110deg,#08274a,#071222);border:1px solid #1763a2;border-radius:22px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .support h2{margin-bottom:5px}.support p{margin:0;color:var(--muted)}
+    .slogan{font-size:clamp(23px,3vw,34px);font-weight:900;color:var(--gold);margin-top:12px}
+    .faq-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .faq h3{font-size:16px;margin:0 0 6px}.faq p{color:var(--muted);margin:0;font-size:14px}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:#91a3bd;font-size:13px;text-align:center}
+    .sticky-cta{display:none}
+    @media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:28px}.hero-art{order:-1;max-width:560px;margin:auto}.features{grid-template-columns:repeat(2,1fr)}.screens{grid-template-columns:repeat(2,1fr)}.pricing{grid-template-columns:1fr;max-width:460px;margin:auto}.price-card.best{transform:none}.steps{grid-template-columns:1fr}.support{align-items:flex-start;flex-direction:column}.faq-list{grid-template-columns:1fr}}
+    @media(max-width:480px){.brand span{font-size:17px}.nav .btn{padding:9px 11px;font-size:13px}.features{gap:9px}.feature{padding:14px}.feature h3{font-size:16px}.lead{font-size:16px}.hero{gap:22px}.actions .btn{width:100%}.sticky-cta{display:flex;position:fixed;bottom:10px;right:4%;left:4%;z-index:10;box-shadow:0 8px 30px #0009}.sticky-cta .btn{width:100%}footer{padding-bottom:82px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="assets/black-pro-logo.jpg" alt="شعار BLACK PRO"><span>BLACK <b>PRO</b></span></a>
+    <nav class="navlinks"><a href="#features">المميزات</a><a href="#screens">صور التطبيق</a><a href="#prices">الأسعار</a><a href="#support">الدعم</a></nav>
+    <a class="btn whatsapp" href="https://wa.me/9647854404442?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%A8%D9%80%20BLACK%20PRO" target="_blank" rel="noopener">واتساب للاشتراك</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <span class="eyebrow">BLACK PRO • الترفيه بمكان واحد</span>
+      <h1>أفلام ومسلسلات ورياضة…<br><em>كل الترفيه بمكان واحد</em></h1>
+      <p class="lead">استمتع بتجربة مشاهدة تجمع الأفلام والمسلسلات والقنوات الرياضية ومحتوى الأطفال ضمن واجهة واحدة سهلة الاستخدام.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://update.uforone.net/IPTV/blackpro8.2.4-20260616.apk" target="_blank" rel="noopener">⬇ تحميل التطبيق للأندرويد</a>
+        <a class="btn whatsapp" href="https://wa.me/9647854404442?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%A8%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20BLACK%20PRO" target="_blank" rel="noopener">💬 اشترك عبر واتساب</a>
+      </div>
+      <p class="fine">رابط التحميل مخصص لملف APK على أجهزة أندرويد. قد يطلب الجهاز تأكيد تثبيت التطبيقات من خارج المتجر.</p>
+    </div>
+    <div class="hero-art"><div class="glow"></div><img src="assets/black-pro-poster.png" alt="إعلان تطبيق BLACK PRO"></div>
+  </div>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head"><h2>محتوى يناسب كل الأذواق</h2><p>اختَر القسم اللي تحبه وتواصل ويانه إذا تحتاج مساعدة بالاشتراك أو التثبيت.</p></div>
+      <div class="features">
+        <article class="feature"><div class="emoji">🎬</div><h3>أفلام</h3><p>تصفح مجموعة متنوعة من الأفلام.</p></article>
+        <article class="feature"><div class="emoji">📺</div><h3>مسلسلات</h3><p>مسلسلات عربية وأجنبية بواجهة منظمة.</p></article>
+        <article class="feature"><div class="emoji">⚽</div><h3>قنوات رياضية</h3><p>تابع القنوات والمحتوى الرياضي المتاح.</p></article>
+        <article class="feature"><div class="emoji">🧸</div><h3>قسم الأطفال</h3><p>محتوى ترفيهي مخصص للصغار.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <div class="wrap">
+      <div class="section-head"><h2>شوف واجهة التطبيق</h2><p>صور من واجهة BLACK PRO والأقسام المختلفة.</p></div>
+      <div class="screens">
+        <figure class="screen"><img src="assets/movies-screen.jpg" alt="واجهة الأفلام في BLACK PRO" loading="lazy"><figcaption>قسم الأفلام</figcaption></figure>
+        <figure class="screen"><img src="assets/series-screen.jpg" alt="واجهة المسلسلات في BLACK PRO" loading="lazy"><figcaption>قسم المسلسلات</figcaption></figure>
+        <figure class="screen"><img src="assets/kids-screen.jpg" alt="واجهة الأطفال في BLACK PRO" loading="lazy"><figcaption>قسم الأطفال</figcaption></figure>
+        <figure class="screen"><img src="assets/sports-screen.jpg" alt="واجهة الرياضة في BLACK PRO" loading="lazy"><figcaption>قسم الرياضة</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices">
+    <div class="wrap">
+      <div class="section-head"><h2>اختَر الاشتراك المناسب إلك</h2><p>أسعار واضحة بالدينار العراقي — راسلنا حتى نساعدك بإتمام الاشتراك.</p></div>
+      <div class="pricing">
+        <article class="price-card"><div class="duration">اشتراك شهر واحد</div><div class="price">5,000</div><div class="currency">دينار عراقي</div><a class="btn outline" href="https://wa.me/9647854404442?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%B4%D9%87%D8%B1%20%D9%88%D8%A7%D8%AD%D8%AF%20BLACK%20PRO" target="_blank" rel="noopener">اطلب اشتراك شهر</a></article>
+        <article class="price-card best"><span class="tag">عرض مميز</span><div class="duration">اشتراك 3 أشهر</div><div class="price">10,000</div><div class="currency">دينار عراقي</div><a class="btn primary" href="https://wa.me/9647854404442?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%203%20%D8%A3%D8%B4%D9%87%D8%B1%20BLACK%20PRO" target="_blank" rel="noopener">اطلب اشتراك 3 أشهر</a></article>
+        <article class="price-card"><div class="duration">اشتراك سنة كاملة</div><div class="price">25,000</div><div class="currency">دينار عراقي</div><a class="btn outline" href="https://wa.me/9647854404442?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%B3%D9%86%D8%A9%20BLACK%20PRO" target="_blank" rel="noopener">اطلب اشتراك سنة</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><h2>شلون تبدي؟</h2><p>ثلاث خطوات بسيطة حتى تتواصل ويانه وتبدي.</p></div>
+      <div class="steps">
+        <article class="step"><strong>1 — حمّل التطبيق</strong><p>اضغط زر التحميل ونزّل ملف APK على جهاز أندرويد المتوافق.</p></article>
+        <article class="step"><strong>2 — راسلنا</strong><p>اختَر باقتك ودز رسالة على واتساب حتى نساعدك بتفعيل الاشتراك.</p></article>
+        <article class="step"><strong>3 — استمتع بالمشاهدة</strong><p>إذا واجهتك مشكلة بالتثبيت أو الاستخدام، فريق الدعم جاهز لمساعدتك.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="wrap support">
+      <div><h2>دعم فني 24 ساعة</h2><p>للاشتراك أو الاستفسار أو المساعدة بالتثبيت، تواصل ويانه عبر واتساب.</p><div class="slogan">احنه ما نريدك يوم… نريدك دوم ❤️</div></div>
+      <a class="btn whatsapp" href="https://wa.me/9647854404442?text=%D9%87%D9%84%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20BLACK%20PRO" target="_blank" rel="noopener">واتساب: 07854404442</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><h2>أسئلة شائعة</h2></div>
+      <div class="faq-list">
+        <article class="faq"><h3>هل التطبيق لأجهزة الآيفون؟</h3><p>رابط التحميل الموجود هنا بصيغة APK ومخصص لأجهزة أندرويد، وليس لتثبيت الآيفون.</p></article>
+        <article class="faq"><h3>شلون أشترك؟</h3><p>اضغط أي زر واتساب، واكتب الباقة اللي تريدها حتى يتواصل وياك الدعم.</p></article>
+        <article class="faq"><h3>إذا واجهت مشكلة بالتثبيت؟</h3><p>راسلنا على الرقم الظاهر بالصفحة حتى نساعدك بالخطوات.</p></article>
+        <article class="faq"><h3>شنو أسعار الاشتراك؟</h3><p>شهر بـ5,000 د.ع، ثلاثة أشهر بـ10,000 د.ع، وسنة كاملة بـ25,000 د.ع.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">BLACK PRO © — كل الترفيه بمكان واحد • للاستفسار: 07854404442</div></footer>
+<div class="sticky-cta"><a class="btn whatsapp" href="https://wa.me/9647854404442?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%A8%D9%80%20BLACK%20PRO" target="_blank" rel="noopener">💬 اشترك هسه عبر واتساب</a></div>
+</body>
+</html>
